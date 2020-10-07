@@ -52,11 +52,11 @@ public class ShoppingCarTest {
 
     @Test
     public void getAppleSpecial(){
-        Apple apple = new Apple(2, 5);
+        Apple apple = new Apple(3, 50);
 
-        Cart cart = new Cart();
+        Cart cart = new Cart(new Offer(Apple.class, 3, 130));
         cart.add(apple);
 
-        assertEquals(cart.getTotal(), 60);
+        assertEquals(cart.getTotal(), 130);
     }
 }
