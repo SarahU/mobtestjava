@@ -1,6 +1,6 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShoppingCarTest {
     @Test
@@ -17,7 +17,7 @@ public class ShoppingCarTest {
         Banana banana = new Banana();
 
         Cart cart = new Cart();
-        cart.add(banana);
+//        cart.add(banana);
 
         assertEquals(cart.getItems().size(), 1);
     }
