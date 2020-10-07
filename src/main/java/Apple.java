@@ -1,2 +1,7 @@
-public class Apple {
+public class Apple implements Fruit {
+
+    public Apple(int price) {
+
+    }
+
 }

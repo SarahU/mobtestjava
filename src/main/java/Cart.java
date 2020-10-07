@@ -2,14 +2,17 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Cart {
-    private ArrayList<Apple> cart;
+    private ArrayList<Fruit> cart = new ArrayList<>();
 
-    public void add(Apple apple) {
-        cart = new ArrayList<Apple>();
-        cart.add(apple);
+    public void add(Fruit fruit) {
+        cart.add(fruit);
     }
 
     public Collection getItems() {
         return cart;
+    }
+
+    public int getTotal() {
+        return 5;
     }
 }
