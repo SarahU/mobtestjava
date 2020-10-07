@@ -13,6 +13,6 @@ public class Cart {
     }
 
     public int getTotal() {
-        return 5;
+        return cart.stream().mapToInt(x -> x.getPrice()).sum();
     }
 }

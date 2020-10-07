@@ -43,4 +43,16 @@ public class ShoppingCarTest {
 
         assertEquals(cart.getTotal(), 10);
     }
+
+    @Test
+    public void getTotalPriceOfMultipleBananas(){
+        Banana banana = new Banana(10, 5);
+        Apple apple = new Apple(5);
+
+        Cart cart = new Cart();
+        cart.add(banana);
+        cart.add(apple);
+
+        assertEquals(cart.getTotal(), 10);
+    }
 }
